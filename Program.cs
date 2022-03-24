@@ -1,4 +1,12 @@
+using LanchesMac.Context;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+ConfigurationManager configuration = builder.Configuration;
+
+builder.Services.AddDbContext<AppDbContext>(options=>
+options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
