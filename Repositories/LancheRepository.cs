@@ -5,10 +5,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMac.Repositories
 {
+    
+    using LanchesMac.Repositories.Interfaces;
+    
     public class LancheRepository: ILancheRepository
     {
         private readonly AppDbContext _context;
-        
+
+        public LancheRepository()
+        {
+        }
+
         public LancheRepository(AppDbContext context){
             _context = context;
         }
@@ -19,8 +26,8 @@ namespace LanchesMac.Repositories
             .Where(p=>p.LanchePreferido)
             .Include(c=>c.Categoria);
 
+        public Lanche GetLancheById(int id) => _context.Lanches.FirstOrDefault(l => l.Id == id);
 
-        Lanche GetLancheById(int id) => _context.Lanches.FirstOrDefault(l => l.Id == id);
 
     }
 }

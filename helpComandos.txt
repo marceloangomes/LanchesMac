@@ -1,0 +1,2 @@
+  Criar View
+  dotnet-aspnet-codegenerator view List List -m Lanche -dc AppDbContext -udl -outDir Views/Lanche

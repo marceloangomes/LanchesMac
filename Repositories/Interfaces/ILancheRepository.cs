@@ -6,6 +6,6 @@ namespace LanchesMac.Repositories.Interfaces
     {
          IEnumerable<Lanche> Lanches{get;}
          IEnumerable<Lanche> LanchesPreferidos{get;}
-         Lanche GetLancheById(int id);
+         public Lanche GetLancheById(int id);
     }
 }
