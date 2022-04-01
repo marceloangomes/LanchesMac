@@ -31,9 +31,15 @@ namespace LanchesMac.Models
         [Column(TypeName ="decimal(10,2)")]
         [Range(1,999.99,ErrorMessage ="Valor do Lanche inválido")]
         public decimal Preco { get; set; }
+        [Display(Name ="Caminho Imagem Normal")]
+        [StringLength(200,ErrorMessage ="O {0} deve ter no máximo {1} caracteres")]
         public string imagemUrl { get; set; }
+        [Display(Name ="Caminho Imagem Miniatura")]
+        [StringLength(200,ErrorMessage ="O {0} deve ter no máximo {1} caracteres")]
         public string imagemThumbNailUrl { get; set; }
+        [Display(Name ="Preferido?")]
         public bool LanchePreferido { get; set; }
+        [Display(Name = "Estoque")]
         public bool EmEstoque { get; set; }
         public int CategoriaId { get; set; }
         public virtual Categoria Categoria { get; set; }
