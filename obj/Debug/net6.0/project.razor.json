@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_LancheResumo.cshtml",
+      "TargetPath": "Views\\Shared\\_LancheResumo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Lanche\\List.cshtml",
       "TargetPath": "Views\\Lanche\\List.cshtml",
       "FileKind": "mvc"
@@ -16335,6 +16340,11 @@
     {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Lanche\\List copy.cshtml",
+      "TargetPath": "Views\\Lanche\\List copy.cshtml",
       "FileKind": "mvc"
     }
   ],

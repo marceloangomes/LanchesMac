@@ -4,10 +4,7 @@ using LanchesMac.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMac.Repositories
-{
-    
-    using LanchesMac.Repositories.Interfaces;
-    
+{   
     public class LancheRepository: ILancheRepository
     {
         private readonly AppDbContext _context;

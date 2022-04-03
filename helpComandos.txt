@@ -1,2 +1,16 @@
+  Criar Migration
+  dotnet ef add migration NomeMigration
+
+  Atualizar base de dados
+  dotnet ef database update
+
   Criar View
   dotnet-aspnet-codegenerator view List List -m Lanche -dc AppDbContext -udl -outDir Views/Lanche
+
+  Criar Partial View
+  dotnet-aspnet-codegenerator view _LancheResumo Empty -m LancheListViewModel -dc AppDbContext -l null -outDir Views/Shared 
+
+  Criar Controller Sem Model
+  dotnet-aspnet-codegenerator controller -name CarrinhoController -async -nv -outDir \Controllers
+
+  
