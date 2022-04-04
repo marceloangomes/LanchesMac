@@ -34,7 +34,7 @@ namespace LanchesMac.Models
 
         public void Adicionar(Lanche lanche)
         {
-            var carrinhoCompraItem = EncontrarLanche(lanche);
+            var carrinhoCompraItem = EncontrarLanche(lanche.Id);
             
             if(carrinhoCompraItem == null)
             {
@@ -54,7 +54,7 @@ namespace LanchesMac.Models
 
         public int Remover(Lanche lanche)
         {
-            var carrinhoCompraItem = EncontrarLanche(lanche);
+            var carrinhoCompraItem = EncontrarLanche(lanche.Id);
 
             int quantidadeLocal=0;
 
@@ -72,10 +72,10 @@ namespace LanchesMac.Models
             return quantidadeLocal;
         }
 
-        public CarrinhoCompraItem EncontrarLanche(Lanche lanche)
+        public CarrinhoCompraItem EncontrarLanche(int lancheId)
         {
             return _context.CarrinhoCompraItens.SingleOrDefault(
-                s=> s.Lanche.Id == lanche.Id && s.CarrinhoCompraId==Id);
+                s=> s.Lanche.Id == lancheId && s.CarrinhoCompraId==Id);
         }
 
         public List<CarrinhoCompraItem> ListarItens()
