@@ -1,14 +1,27 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using LanchesMac.Models;
+using LanchesMac.Repositories.Interfaces;
+using LanchesMac.ViewsModel;
 
 namespace LanchesMac.Controllers;
 
 public class HomeController : Controller
 {
+    private readonly ILancheRepository _lancheRepository;
+
+    public HomeController(ILancheRepository lancheRepository)
+    {
+        _lancheRepository = lancheRepository;
+    }
+
     public IActionResult Index()
     {
-        return View();
+        var homeViewModel = new HomeViewModel
+        {
+            Lanchespreferidos=_lancheRepository.LanchesPreferidos
+        };
+        return View(homeViewModel);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

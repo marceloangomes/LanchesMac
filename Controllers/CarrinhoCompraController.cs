@@ -23,11 +23,11 @@ namespace LanchesMac.Controllers
         public IActionResult Index()
         {
             _carrinhoCompra.CarrinhoCompraItens = _carrinhoCompra.ListarItens();
-            var carrinhoCompraItemViewModel = new CarrinhoCompraViewModel(){
-                CarrinhoCompra =_carrinhoCompra,
+            var carrinhoCompraViewModel = new CarrinhoCompraViewModel(_carrinhoCompra)
+            {                
                 ValorTotal =_carrinhoCompra.ValorTotal()
             };
-            return View(carrinhoCompraItemViewModel);
+            return View(carrinhoCompraViewModel);
         }
 
         public RedirectToActionResult Adicionar(int lancheId)
