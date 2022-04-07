@@ -14245,6 +14245,33 @@
         }
       },
       {
+        "HashCode": 1466626902,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CarrinhoCompraResumoViewComponentTagHelper",
+        "AssemblyName": "LanchesMac",
+        "CaseSensitive": false,
+        "TagMatchingRules": [],
+        "Diagnostics": [
+          {
+            "Id": "RZ3900",
+            "Severity": 3,
+            "Message": "Could not find an 'Invoke' or 'InvokeAsync' method for the view component 'LanchesMac.Components.CarrinhoCompraResumo'.",
+            "Span": {
+              "FilePath": null,
+              "AbsoluteIndex": -1,
+              "LineIndex": -1,
+              "CharacterIndex": -1,
+              "Length": 0
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CarrinhoCompraResumoViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "CarrinhoCompraResumo"
+        }
+      },
+      {
         "HashCode": 141407075,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -16325,6 +16352,11 @@
     {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\Components\\CarrinhoCompraResumo\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\CarrinhoCompraResumo\\Default.cshtml",
       "FileKind": "mvc"
     },
     {
