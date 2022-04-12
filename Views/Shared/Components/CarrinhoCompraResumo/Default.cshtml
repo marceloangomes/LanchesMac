@@ -1,15 +1,12 @@
+@model CarrinhoCompraViewModel
 
-@{
-    Layout = null;
+@if(Model.CarrinhoCompra.CarrinhoCompraItens.Count > 0)
+{
+    <a asp-controller="CarrinhoCompra" aps-actions="Index">
+        <span><img src="~/images/cart-5-16.ico" /> </span>
+        <span style="color:write">
+            @Model.CarrinhoCompra.CarrinhoCompraItens.Count
+        </span>
+    </a>
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Default</title>
-</head>
-<body>
-</body>
-</html>

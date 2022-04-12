@@ -7,16 +7,19 @@ namespace LanchesMac.ViewsModel
         public CarrinhoCompraViewModel(CarrinhoCompra carrinhoCompra)
         {
             this.CarrinhoCompra = carrinhoCompra;
-            this.CarrinhoCompraItensViewModel = new List<CarrinhoCompraItemViewModel>();
+            this.CarrinhoCompraItensViewModel = new List<CarrinhoCompraItemViewModel>();            
             foreach (var item in carrinhoCompra.CarrinhoCompraItens)
             {
-                this.CarrinhoCompraItensViewModel.Add(new CarrinhoCompraItemViewModel(){
-                    CarrinhoCompraId=item.CarrinhoCompraId,
-                    Id=item.Id,
-                    Quantidade=item.Quantidade,
-                    Lanche=item.Lanche,
-                    ValorTotal=item.Quantidade * item.Lanche.Preco
-                });
+                if(item.CarrinhoCompraId != null)
+                {
+                    this.CarrinhoCompraItensViewModel.Add(new CarrinhoCompraItemViewModel(){
+                        CarrinhoCompraId=item.CarrinhoCompraId,
+                        Id=item.Id,
+                        Quantidade=item.Quantidade,
+                        Lanche=item.Lanche,
+                        ValorTotal=item.Quantidade * item.Lanche.Preco
+                    });
+                }
             }
         }
         public CarrinhoCompra CarrinhoCompra { get; set; }

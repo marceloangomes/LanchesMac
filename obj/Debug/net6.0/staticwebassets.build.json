@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ek4PmNS268LYEV149/DSAGwhuUWqS1jL5EVFYFhbm54=",
+  "Hash": "DQdabUHkci3epERh9boJP3cqqSIi7yi6FGI5pLOHAYs=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\marce\\source\\repos\\LanchesMac\\wwwroot\\images\\cart-5-16.ico",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\marce\\source\\repos\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/cart-5-16.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cart-5-16.ico"
     },
     {
       "Identity": "C:\\Users\\marce\\source\\repos\\LanchesMac\\wwwroot\\images\\Full-Cart-icon.png",
