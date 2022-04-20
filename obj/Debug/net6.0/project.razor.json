@@ -12050,6 +12050,40 @@
         }
       },
       {
+        "HashCode": -1018023732,
+        "Kind": "ITagHelper",
+        "Name": "LanchesMac.TagHelpers.EmailTagHelper",
+        "AssemblyName": "LanchesMac",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "email"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "endereco",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Endereco"
+            }
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "conteudo",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Conteudo"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "LanchesMac.TagHelpers.EmailTagHelper"
+        }
+      },
+      {
         "HashCode": -1132855933,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
@@ -14245,30 +14279,37 @@
         }
       },
       {
-        "HashCode": 1466626902,
+        "HashCode": 1664184466,
         "Kind": "MVC.ViewComponent",
         "Name": "__Generated__CarrinhoCompraResumoViewComponentTagHelper",
         "AssemblyName": "LanchesMac",
         "CaseSensitive": false,
-        "TagMatchingRules": [],
-        "Diagnostics": [
+        "TagMatchingRules": [
           {
-            "Id": "RZ3900",
-            "Severity": 3,
-            "Message": "Could not find an 'Invoke' or 'InvokeAsync' method for the view component 'LanchesMac.Components.CarrinhoCompraResumo'.",
-            "Span": {
-              "FilePath": null,
-              "AbsoluteIndex": -1,
-              "LineIndex": -1,
-              "CharacterIndex": -1,
-              "Length": 0
-            }
+            "TagName": "vc:carrinho-compra-resumo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "ITagHelper",
           "Common.TypeName": "__Generated__CarrinhoCompraResumoViewComponentTagHelper",
           "MVC.ViewComponent.Name": "CarrinhoCompraResumo"
+        }
+      },
+      {
+        "HashCode": 1164229465,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CategoriaMenuViewComponentTagHelper",
+        "AssemblyName": "LanchesMac",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:categoria-menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CategoriaMenuViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "CategoriaMenu"
         }
       },
       {
@@ -16335,6 +16376,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\Components\\CategoriaMenu\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\CategoriaMenu\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_Carrossel.cshtml",
       "TargetPath": "Views\\Shared\\_Carrossel.cshtml",
       "FileKind": "mvc"
@@ -16342,6 +16388,11 @@
     {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Contato\\Index.cshtml",
+      "TargetPath": "Views\\Contato\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16377,6 +16428,11 @@
     {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Lanche\\Details.cshtml",
+      "TargetPath": "Views\\Lanche\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
