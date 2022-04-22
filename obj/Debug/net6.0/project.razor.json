@@ -16416,6 +16416,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Home\\_IndexPartial.cshtml",
+      "TargetPath": "Views\\Home\\_IndexPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_LancheResumo.cshtml",
       "TargetPath": "Views\\Shared\\_LancheResumo.cshtml",
       "FileKind": "mvc"
