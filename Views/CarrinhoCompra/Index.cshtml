@@ -20,18 +20,14 @@
                         <tr>
                             <td class="text-center">@item.Quantidade</td>
                             <td class="text-left">@item.Lanche.Nome</td>
-                            <td class="text-rigth"@item.Lanche.Preco.ToString("c")></td>
+                            <td class="text-rigth">@item.Lanche.Preco.ToString("C")</td>
+                            <td class="text-right">@item.ValorTotal</td>                       
+                            <td class="text-center">
+                                <a asp-controller="CarrinhoCompra" asp-action="Remover" 
+                                asp-route-lancheId="@item.Lanche.Id"><img src="~/images/remove.ico" width="10px" height="10px" />
+                                </a>
+                            </td>
                         </tr>
-                        <td class="text-right">
-                            @item.ValorTotal
-                        </td>
-
-                        <td class="text-center">
-                         <a asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra" 
-                          asp-route-lancheId="@item.Lanche.Id"><img src="~/images/remove.png" width="10px" height="10px" />
-                         </a>
-                      </td>
-
                     }
                 </tbody>
                 <tfoot>

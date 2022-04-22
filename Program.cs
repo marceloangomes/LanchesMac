@@ -16,6 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options=>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddTransient<ICategoriaRepository,CategoriaRepository>();
 builder.Services.AddTransient<ILancheRepository,LancheRepository>();
+builder.Services.AddTransient<IPedidoRepository,PedidoRepository>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();
 builder.Services.AddScoped(sp => CarrinhoCompra.ObterInstancia(sp));
