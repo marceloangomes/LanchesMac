@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using LanchesMac.Context;
 using LanchesMac.Repositories;
 using LanchesMac.Repositories.Interfaces;
@@ -10,10 +12,25 @@ var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
 
 // Add services to the container.
+
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 builder.Services.AddDbContext<AppDbContext>(options=>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+    
+builder.Services.Configure<IdentityOptions>(options=>
+{
+    options.Password.RequireDigit=false;
+    options.Password.RequireLowercase=false;
+    options.Password.RequireNonAlphanumeric=false;
+    options.Password.RequireUppercase=false;
+    options.Password.RequiredLength=3;
+    options.Password.RequiredUniqueChars=1;
+});
+
 builder.Services.AddTransient<ICategoriaRepository,CategoriaRepository>();
 builder.Services.AddTransient<ILancheRepository,LancheRepository>();
 builder.Services.AddTransient<IPedidoRepository,PedidoRepository>();
@@ -38,6 +55,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 

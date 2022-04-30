@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LanchesMac.Models;
 using LanchesMac.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanchesMac.Controllers
@@ -21,12 +22,14 @@ namespace LanchesMac.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult Checkout()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Checkout(Pedido pedido)
         {
             int totalItensPedido = 0;

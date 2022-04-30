@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using LanchesMac.Models;
 using LanchesMac.Repositories.Interfaces;
 using LanchesMac.ViewsModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LanchesMac.Controllers
 {
+    [Authorize]
     public class CarrinhoCompraController : Controller
     {
         private readonly ILancheRepository _lancheRepository;
@@ -20,6 +22,7 @@ namespace LanchesMac.Controllers
             _carrinhoCompra = carrinhoCompra;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             _carrinhoCompra.CarrinhoCompraItens = _carrinhoCompra.ListarItens();

@@ -13,4 +13,6 @@
   Criar Controller Sem Model
   dotnet-aspnet-codegenerator controller -name CarrinhoController -async -nv -outDir \Controllers
 
-  
+  Instalar Identity
+  dotnet add package Microsoft.AspNetCore.Identity
+  dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore

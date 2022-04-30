@@ -16396,6 +16396,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\CarrinhoCompra\\Index.cshtml",
       "TargetPath": "Views\\CarrinhoCompra\\Index.cshtml",
       "FileKind": "mvc"
@@ -16436,8 +16441,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Account\\Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\marce\\source\\repos\\LanchesMac\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {

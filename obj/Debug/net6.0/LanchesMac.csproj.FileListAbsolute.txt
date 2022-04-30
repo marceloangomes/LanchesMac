@@ -10,6 +10,9 @@ C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\LanchesMac.pdb
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Humanizer.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\MessagePack.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.Build.Locator.dll
@@ -36,6 +39,8 @@ C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.EntityFramewor
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\marce\source\repos\LanchesMac\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
